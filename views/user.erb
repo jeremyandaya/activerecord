@@ -1,0 +1,10 @@
+<!-- FLASH MESSAGE -->
+<% if flash[:notice] %>
+<div class="notice"><%= flash[:notice] %></div>
+<% end %>
+
+<h2>User</h2>
+<h3>
+	Welcome <%= @user.name %>! Your email is <%= @user.email %>.
+</h3>
+<a href="/">Back</a> <a href="/users">Users</a>
